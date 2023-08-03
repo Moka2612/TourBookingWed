@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3"
+  },
+  "name": "tourbookingwed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moka2612/TourBookingWed.git"
+  },
+  "author": "Tran Nguyen Ngoc Huy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moka2612/TourBookingWed/issues"
+  },
+  "homepage": "https://github.com/Moka2612/TourBookingWed#readme",
+  "description": ""
+}
