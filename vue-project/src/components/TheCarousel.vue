@@ -9,7 +9,7 @@
         alt="HongKongCity"
       />
 
-      <p class="text-lg text-cyan-100 leading-relaxed font-medium">
+      <p class="text-lg leading-relaxed font-medium text-cyan-100 pt-9">
         As one of the top 10 most attractive tourist destinations in the world,
         Hong Kong is a safe and enjoyable travel destination for tourists from
         all over the world. Hong Kong is divided into four zones: Hong Kong

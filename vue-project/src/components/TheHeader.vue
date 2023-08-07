@@ -28,10 +28,14 @@
       <button>
         <el-icon><DArrowLeft /></el-icon>
       </button>
-      <a href="#/"
+      <a
+        class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100"
+        href="#/"
         ><el-icon> <Edit /> </el-icon>Register</a
       >
-      <a href="#/"
+      <a
+        class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 text-center"
+        href="#/"
         ><el-icon><Document /></el-icon>More Details</a
       >
       <button>
