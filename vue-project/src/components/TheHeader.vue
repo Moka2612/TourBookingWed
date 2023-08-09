@@ -2,9 +2,9 @@
   <section class="max-w-screen-2xl mt-0 mb-4 mx-auto">
     <!-- begin div -->
     <div class="flex justify-between items-center mb-2">
-      <a class="w-44 h-44" href="#"
+      <router-link class="w-44 h-44" to="/mainpage"
         ><img src="../../IMG/IMG-Logo/travel-logo.avif" alt="Logo"
-      /></a>
+      /></router-link>
 
       <!-- begin div -->
       <div class="flex justify-between items-start gap-20 px-3 w-2/3 h-24">
@@ -28,15 +28,15 @@
       <button>
         <el-icon><DArrowLeft /></el-icon>
       </button>
-      <a
+      <router-link
         class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100"
-        href="#/"
-        ><el-icon> <Edit /> </el-icon>Register</a
+        to="/tourgroup"
+        ><el-icon> <Edit /> </el-icon>Tour Group</router-link
       >
-      <a
+      <router-link
         class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 text-center"
-        href="#/"
-        ><el-icon><Document /></el-icon>More Details</a
+        to="/notification"
+        ><el-icon><Document /></el-icon>Notification</router-link
       >
       <button>
         <el-icon><DArrowRight /></el-icon>

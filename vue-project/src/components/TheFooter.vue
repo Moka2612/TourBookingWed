@@ -47,11 +47,39 @@
         <p class="text-base font-bold text-gray-300 uppercase mb-4">
           More service and support
         </p>
-        <address class="text-sm font-normal text-gray-400">
+        <address class="text-sm font-normal text-gray-400 mb-4">
           <p>Address</p>
           <p>PhoneNumber</p>
           <p>Email</p>
         </address>
+        <div>
+          <ul class="flex gap-4">
+            <li>
+              <a href="#/">
+                <ion-icon
+                  class="h-6 w-6 text-gray-300"
+                  name="logo-facebook"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#/"
+                ><ion-icon
+                  class="h-6 w-6 text-gray-300"
+                  name="logo-wechat"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#/"
+                ><ion-icon
+                  class="h-6 w-6 text-gray-300"
+                  name="logo-youtube"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- end div -->
     </div>

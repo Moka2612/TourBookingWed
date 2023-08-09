@@ -9,7 +9,7 @@
         <div class="h-96 col-span-3 bg-gray-50 rounded-lg">
           <img
             class="h-72 w-full rounded-lg shadow-lg"
-            src="../../IMG/IMG-Tour/w3.jpg"
+            src="../../../../IMG/IMG-Tour/w3.jpg"
             alt="Bali Beach"
           />
 
@@ -31,7 +31,7 @@
         <div class="h-96 col-span-3 bg-gray-50 rounded-lg">
           <img
             class="h-72 w-full rounded-lg shadow-lg"
-            src="../../IMG/IMG-Tour/w3.jpg"
+            src="../../../../IMG/IMG-Tour/w3.jpg"
             alt="Bali Beach"
           />
 
@@ -53,7 +53,7 @@
         <div class="h-96 col-span-2 bg-gray-50 rounded-lg">
           <img
             class="h-72 w-full rounded-lg shadow-lg"
-            src="../../IMG/IMG-Tour/Madivel.jpg"
+            src="../../../../IMG/IMG-Tour/Madivel.jpg"
             alt="Madivel beach"
           />
           <div class="h-24 p-2 relative">
@@ -74,7 +74,7 @@
         <div class="h-96 col-span-2 bg-gray-50 rounded-lg">
           <img
             class="h-72 w-full rounded-lg shadow-lg"
-            src="../../IMG/IMG-Tour/w2.jpg"
+            src="../../../../IMG/IMG-Tour/w2.jpg"
             alt="Thailand"
           />
 
@@ -96,7 +96,7 @@
         <div class="h-96 col-span-2 bg-gray-50 rounded-lg">
           <img
             class="h-72 w-full rounded-lg shadow-lg"
-            src="../../IMG/IMG-Tour/w2.jpg"
+            src="../../../../IMG/IMG-Tour/w2.jpg"
             alt="Thailand"
           />
 
@@ -116,12 +116,16 @@
       </div>
       <!-- end div -->
     </div>
+
+    <!-- begin div -->
     <div class="flex justify-center">
-      <button
-        class="h-10 w-28 rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100"
+      <router-link
+        class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100"
+        to="/europetours"
       >
         More
-      </button>
+      </router-link>
     </div>
+    <!-- end div -->
   </section>
 </template>
