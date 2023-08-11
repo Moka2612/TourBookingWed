@@ -3,12 +3,23 @@
     <!-- begin div -->
     <div class="max-w-[60rem] mx-auto">
       <p class="font-bold text-4xl mb-6">Discovery Asia</p>
-      <div class="mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="h-96 col-span-2 relative">
+
+      <!-- begin div -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
+        <!-- begin div -->
+
+        <div
+          v-for="(asia, i) in asias.slice(0, 4)"
+          :key="asia.id"
+          :name="asia.name"
+          :img1="asia.img1"
+          :img2="asia.img2"
+          :class="getColspan(i)"
+        >
           <figure class="rounded-lg shadow-lg overflow-hidden">
             <img
               class="h-96 w-full transition duration-700 hover:scale-[1.1]"
-              src="../../../../IMG/IMG-Tour/Bali3.jpg"
+              :src="getIMG(asia.img2)"
               alt="Bali Beach"
             />
           </figure>
@@ -16,78 +27,26 @@
           <p
             class="font-bold text-4xl text-gray-100 absolute top-[17rem] left-8"
           >
-            Indonesia
+            {{ asia.name }}
           </p>
 
-          <button
-            class="h-10 w-28 font-medium rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 absolute top-80 left-8"
+          <router-link
+            class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-300 absolute top-80 left-8"
+            :to="'/asiatours/' + asia.id"
           >
             View details
-          </button>
+          </router-link>
         </div>
-        <div class="h-96 relative">
-          <img
-            class="h-96 w-96 rounded-lg shadow-lg"
-            src="../../../../IMG/IMG-Tour/Singapore.jpg "
-            alt="Singapore"
-          />
-
-          <p
-            class="font-bold text-4xl text-gray-100 absolute top-[17rem] left-8"
-          >
-            Singapore
-          </p>
-
-          <button
-            class="h-10 w-28 font-medium rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 absolute top-80 left-8"
-          >
-            View details
-          </button>
-        </div>
-
-        <div class="h-96 relative">
-          <img
-            class="h-96 w-96 rounded-lg shadow-lg"
-            src="../../../../IMG/IMG-Tour/Thailand.jpg"
-            alt="Madivel beach"
-          />
-          <p
-            class="font-bold text-4xl text-gray-100 absolute top-[17rem] left-8"
-          >
-            Thailand
-          </p>
-          <button
-            class="h-10 w-28 font-medium rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 absolute top-80 left-8"
-          >
-            View details
-          </button>
-        </div>
-        <div class="h-96 col-span-2 relative">
-          <img
-            class="h-96 w-full rounded-lg shadow-lg"
-            src="../../../../IMG/IMG-Tour/w2.jpg"
-            alt="Thailand"
-          />
-
-          <p
-            class="font-bold text-4xl text-gray-100 absolute top-[17rem] left-8"
-          >
-            VietNam
-          </p>
-          <button
-            class="h-10 w-28 font-medium rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 absolute top-80 left-8"
-          >
-            View details
-          </button>
-        </div>
+        <!-- end div -->
       </div>
+      <!-- end div -->
     </div>
     <!-- end div -->
 
     <!-- begin div -->
     <div class="flex justify-center">
       <router-link
-        class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100"
+        class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-300"
         to="/asiatours"
       >
         More
@@ -96,3 +55,30 @@
     <!-- end div -->
   </section>
 </template>
+
+<script>
+import { inject } from "vue";
+export default {
+  setup() {
+    const asias = inject("asias");
+
+    function getIMG(img) {
+      return "../../../../IMG/IMG-Asia/" + img;
+    }
+
+    function getColspan(i) {
+      if (i === 0 || i === 3) {
+        return "h-96 col-span-2 relative ";
+      } else {
+        return "h-96 relative ";
+      }
+    }
+
+    return {
+      asias,
+      getIMG,
+      getColspan,
+    };
+  },
+};
+</script>

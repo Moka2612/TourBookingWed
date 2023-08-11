@@ -28,11 +28,12 @@
             {{ asia.name }}
           </p>
 
-          <button
-            class="h-10 w-28 font-medium rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 absolute top-80 left-8"
+          <router-link
+            class="h-10 w-28 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-300 absolute top-80 left-8"
+            :to="'/asiatours/' + asia.id"
           >
             View details
-          </button>
+          </router-link>
         </div>
         <!-- end div -->
       </div>

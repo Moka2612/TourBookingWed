@@ -1,8 +1,8 @@
 <template>
-  <the-header></the-header>
-  <the-carousel></the-carousel>
+  <the-header />
+  <the-carousel />
   <router-view></router-view>
-  <the-footer></the-footer>
+  <the-footer />
 </template>
 
 <script>
@@ -10,7 +10,7 @@ import TheHeader from "./components/TheHeader.vue";
 import TheCarousel from "./components/TheCarousel.vue";
 import TheFooter from "./components/TheFooter.vue";
 
-import { reactive, provide } from "vue";
+import { ref, provide } from "vue";
 
 export default {
   components: {
@@ -19,14 +19,39 @@ export default {
     TheFooter,
   },
   setup() {
-    const asiaTours = reactive([
+    const areasTour = ref([
+      {
+        id: "t1",
+        name: "Asia Tour",
+        tourList: ["a1", "a2", "a3", "a4", "a5"],
+      },
+      {
+        id: "t2",
+        name: "Europe Tour",
+        tourList: ["e1", "e2", "e3,", "e4", "e5", "e6"],
+      },
+      {
+        id: "t3",
+        name: "China Tour",
+        tourList: [],
+      },
+      {
+        id: "t4",
+        name: "Long Tour",
+        tourList: ["l1", "l2", "l3,", "l4", "l5", "l6"],
+      },
+    ]);
+
+    const asiaTours = ref([
       {
         id: "a1",
         name: "Indonesia",
-        description: "Indonesia",
+        description:
+          "Indonesia sdfas safda sf asf sadfas dsaf asdf asfd asf asd fsa fdasd fsdf das fas fasf saasf sa afd sdf sa",
         alt: "Indonesia picture",
         img1: "indo1.jpg",
         img2: "indo2.jpg",
+        imgCaro: ["indo1.jpg", "indo2.jpg"],
         price: 100,
       },
       {
@@ -36,6 +61,7 @@ export default {
         alt: "Japan picture",
         img1: "jp1.jpg",
         img2: "jp2.jpg",
+        imgCaro: ["jp1.jpg", "jp2.jpg"],
         price: 100,
       },
       {
@@ -45,8 +71,10 @@ export default {
         alt: "Singapore picture",
         img1: "sin1.jpg",
         img2: "sin2.jpg",
+        imgCaro: ["sin1.jpg", "sin2.jpg"],
         price: 100,
       },
+
       {
         id: "a4",
         name: "Thailand",
@@ -54,6 +82,7 @@ export default {
         alt: "Thailand picture",
         img1: "thai1.jpg",
         img2: "thai2.jpg",
+        imgCaro: ["thai1.jpg", "thai2.jpg"],
         price: 100,
       },
       {
@@ -63,11 +92,12 @@ export default {
         alt: "Vietnam picture",
         img1: "viet1.jpg",
         img2: "viet2.jpg",
+        imgCaro: ["viet1.jpg", "viet2.jpg"],
         price: 100,
       },
     ]);
 
-    const europeTours = reactive([
+    const europeTours = ref([
       {
         id: "e1",
         name: "Italy",
@@ -75,6 +105,7 @@ export default {
         alt: "Italy picture",
         img1: "italy1.jpg",
         img2: "italy2.jpg",
+        imgCaro: ["italy1.jpg", "italy2.jpg"],
         price: 100,
       },
       {
@@ -84,6 +115,7 @@ export default {
         alt: "Denmark picture",
         img1: "denmark1.jpg",
         img2: "denmark2.jpg",
+        imgCaro: ["denmark1.jpg", "denmark2.jpg"],
         price: 100,
       },
       {
@@ -93,6 +125,7 @@ export default {
         alt: "France picture",
         img1: "fra1.jpg",
         img2: "fra2.jpg",
+        imgCaro: ["fra1.jpg", "fra2.jpg"],
         price: 100,
       },
       {
@@ -102,6 +135,7 @@ export default {
         alt: "Germany picture",
         img1: "ger1.jpg",
         img2: "ger2.jpg",
+        imgCaro: ["ger1.jpg", "ger2.jpg"],
         price: 100,
       },
       {
@@ -111,6 +145,7 @@ export default {
         alt: "Greece picture",
         img1: "greece1.jpg",
         img2: "greece2.jpg",
+        imgCaro: ["greece1.jpg", "greece2.jpg"],
         price: 100,
       },
       {
@@ -120,11 +155,12 @@ export default {
         alt: "Iceland picture",
         img1: "iceland1.jpg",
         img2: "iceland2.jpg",
+        imgCaro: ["iceland1.jpg", "iceland2.jpg"],
         price: 100,
       },
     ]);
 
-    const longTours = reactive([
+    const longTours = ref([
       {
         id: "l1",
         name: "Red Moroco",
@@ -175,11 +211,17 @@ export default {
       },
     ]);
 
+    provide("areas", areasTour);
     provide("asias", asiaTours);
     provide("europe", europeTours);
     provide("longTours", longTours);
 
-    return {};
+    return {
+      areasTour,
+      asiaTours,
+      europeTours,
+      longTours,
+    };
   },
 };
 </script>
