@@ -76,7 +76,6 @@ export default {
     const name = selectedTour.name;
     const description = selectedTour.description;
     const carousel = selectedTour.imgCaro;
-    console.log(carousel);
 
     function getImg(img) {
       return "../../../../IMG/IMG-Asia/" + img;
@@ -84,22 +83,27 @@ export default {
 
     const options = ref([
       {
+        id: 1,
         value: "Option1",
         label: "Option1",
       },
       {
+        id: 2,
         value: "Option2",
         label: "Option2",
       },
       {
+        id: 3,
         value: "Option3",
         label: "Option3",
       },
       {
+        id: 4,
         value: "Option4",
         label: "Option4",
       },
       {
+        id: 5,
         value: "Option5",
         label: "Option5",
       },

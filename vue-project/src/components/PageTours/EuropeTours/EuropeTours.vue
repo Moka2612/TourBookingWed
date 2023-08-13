@@ -62,7 +62,6 @@ import { inject } from "vue";
 export default {
   setup() {
     const europe = inject("europe");
-    console.log(europe);
 
     function getIMG(img) {
       return "../../../../IMG/IMG-EU/" + img;

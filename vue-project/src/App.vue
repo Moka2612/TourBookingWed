@@ -211,16 +211,32 @@ export default {
       },
     ]);
 
+    const chinaTours = ref([]);
+
+    // Get Fake API data China Tour
+    fetch("https://jsonplaceholder.typicode.com/photos")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+          // JSON.parse: JSON -> javascript types
+        }
+      })
+      .then((data) => (chinaTours.value = data));
+
+    console.log(chinaTours.value);
+
     provide("areas", areasTour);
     provide("asias", asiaTours);
     provide("europe", europeTours);
     provide("longTours", longTours);
+    provide("china", chinaTours);
 
     return {
       areasTour,
       asiaTours,
       europeTours,
       longTours,
+      chinaTours,
     };
   },
 };

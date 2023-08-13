@@ -76,7 +76,6 @@ export default {
     const name = selectedTour.name;
     const description = selectedTour.description;
     const carousel = selectedTour.imgCaro;
-    console.log(carousel);
 
     function getImg(img) {
       return "../../../../IMG/IMG-Eu/" + img;
