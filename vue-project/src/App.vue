@@ -223,8 +223,6 @@ export default {
       })
       .then((data) => (chinaTours.value = data));
 
-    console.log(chinaTours.value);
-
     provide("areas", areasTour);
     provide("asias", asiaTours);
     provide("europe", europeTours);
