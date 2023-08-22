@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[60rem] mx-auto">
+  <section class="max-w-[60rem] mx-auto">
     <h1 class="text-3xl font-semibold mb-10">
       Tour Group Registration and Responsibilities
     </h1>
@@ -9,5 +9,5 @@
         alt="Picture document"
       />
     </figure>
-  </div>
+  </section>
 </template>

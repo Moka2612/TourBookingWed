@@ -10,6 +10,7 @@ import EuropeDetail from "./components/PageTours/EuropeTours/EuropeDetail.vue";
 import ChinaTours from "./components/PageTours/ChinaTours/ChinaToursList.vue";
 import ChinaDetail from "./components/PageTours/ChinaTours/ChinaDetail.vue";
 import LongTours from "./components/PageTours/LongTours/LongToursList.vue";
+import LongToursDetail from "./components/PageTours/LongTours/LongToursDetail.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,8 +28,9 @@ const router = createRouter({
     // China tours
     { path: "/chinatours", component: ChinaTours },
     { path: "/chinatours/:cid", component: ChinaDetail, props: true },
-
+    // Long tours
     { path: "/longtours", component: LongTours },
+    { path: "/longtours/:lid", component: LongToursDetail, props: true },
   ],
 });
 

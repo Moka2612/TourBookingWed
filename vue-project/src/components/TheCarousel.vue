@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="h-[400px] max-w-screen-2xl mx-auto mb-4">
-      <el-carousel height="400px" :interval="5000" arrow="always">
+      <el-carousel height="400px" :interval="3000" arrow="always">
         <el-carousel-item v-for="item in 4" :key="item">
           <div>
             <img
@@ -19,22 +19,6 @@
           </div>
         </el-carousel-item>
       </el-carousel>
-      <!-- <img
-        class="h-96 rounded-lg shadow-lg"
-        src="../../IMG/IMG-Travel/hongkong.jpg"
-        alt="HongKongCity"
-      />
-
-      <p class="text-lg leading-relaxed font-medium text-cyan-100 pt-9">
-        As one of the top 10 most attractive tourist destinations in the world,
-        Hong Kong is a safe and enjoyable travel destination for tourists from
-        all over the world. Hong Kong is divided into four zones: Hong Kong
-        Island, Kowloon, Lantou and New Territories. Hong Kong Island and
-        Kowloon have famous tourist attractions such as Disneyland Park, Vitoria
-        Bay, Thai Binh Peak, Huynh Dai Tien Temple, Avenue of Stars. Let you
-        have fun and enjoy the beautiful scenery. Discover the city of Hong Kong
-        with BigBigHoliday today!
-      </p> -->
     </div>
 
     <!-- begin div -->

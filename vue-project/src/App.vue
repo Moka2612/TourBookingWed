@@ -1,6 +1,7 @@
 <template>
   <the-header />
   <the-carousel />
+  <sign-up-form />
   <router-view></router-view>
   <the-footer />
 </template>
@@ -9,6 +10,7 @@
 import TheHeader from "./components/TheHeader.vue";
 import TheCarousel from "./components/TheCarousel.vue";
 import TheFooter from "./components/TheFooter.vue";
+import SignUpForm from "./components/PageUser/SignUpForm.vue";
 
 import { ref, provide } from "vue";
 
@@ -17,6 +19,7 @@ export default {
     TheHeader,
     TheCarousel,
     TheFooter,
+    SignUpForm,
   },
   setup() {
     const areasTour = ref([

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-cyan-700 pb-10 pt-8">
+  <section class="bg-zinc-900 pb-10 pt-8">
     <!-- begin div -->
     <div class="max-w-[45rem] mx-auto grid grid-cols-5 gap-5">
       <!-- begin div -->
@@ -85,7 +85,8 @@
     </div>
     <!-- end div -->
   </section>
-  <div class="bg-cyan-900 py-5">
+  <div class="h-[1px] bg-gray-500"></div>
+  <div class="bg-zinc-800 py-5">
     <p class="text-center text-xs font-normal text-gray-400 tracking-tighter">
       Copyright &copy; 2023 by BigBigHoliday Company
     </p>

@@ -5,7 +5,7 @@
       <p class="font-bold text-4xl mb-6">Discovery Europe</p>
 
       <!-- begin div -->
-      <div class="mb-8 grid grid-cols-2 gap-3">
+      <div class="mb-8 grid grid-cols-2 gap-5">
         <!-- begin div -->
         <div
           class="h-96 relative"

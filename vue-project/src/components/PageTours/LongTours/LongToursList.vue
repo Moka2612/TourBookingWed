@@ -5,7 +5,7 @@
       <p class="font-bold text-4xl mb-6">Multinational Discovery</p>
 
       <!-- begin div -->
-      <div class="mb-8 grid grid-cols-2 gap-3">
+      <div class="mb-8 grid grid-cols-2 gap-5">
         <!-- begin div -->
         <div
           class="h-96 relative"
@@ -22,18 +22,18 @@
             />
           </figure>
 
-          <p
-            class="font-bold text-4xl text-gray-500 absolute top-[17rem] left-8"
-          >
+          <p class="font-bold text-4xl text-zinc-600 absolute top-80 left-8">
             {{ tour.name }}
           </p>
 
-          <button
-            class="h-10 w-28 font-medium rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-100 absolute top-80 left-8"
+          <router-link
+            class="h-12 w-32 flex justify-center items-center rounded-lg border-2 bg-amber-500 border-amber-500 text-amber-50 hover:bg-amber-100 hover:text-amber-500 hover:border-2 hover:duration-300 absolute top-80 right-8"
+            :to="'/longtours/' + tour.id"
           >
             View details
-          </button>
+          </router-link>
         </div>
+
         <!-- end div -->
       </div>
       <!-- end div -->

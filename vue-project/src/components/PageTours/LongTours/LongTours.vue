@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-cyan-700 pb-14">
+  <section class="bg-cyan-900 pb-14">
     <!-- begin div -->
     <div class="max-w-[60rem] mx-auto pt-7">
       <p class="font-bold text-4xl mb-6 text-gray-100">
@@ -7,7 +7,7 @@
       </p>
 
       <!-- begin div -->
-      <div class="mb-5">
+      <div class="mb-9">
         <el-carousel
           indicator-position="none"
           :interval="4000"
@@ -19,11 +19,11 @@
             :key="tour.id"
             :name="tour.name"
             :img="tour.img"
-            class="h-full w-full bg-cover bg-no-repeat bg-center"
-            :style="{ backgroundImage: 'url(' + getIMG(tour.img) + ')' }"
+            class="h-full w-full"
           >
+            <img class="h-full w-full relative" :src="getIMG(tour.img)" />
             <h3
-              class="h-[450px] font-bold text-4xl flex justify-center place-items-end text-cyan-600"
+              class="font-extrabold text-4xl text-zinc-500 absolute bottom-5 left-32"
             >
               {{ tour.name }}
             </h3>
@@ -45,7 +45,7 @@
     </div>
     <!-- end div -->
   </section>
-  <diV class="h-[1px] bg-gray-400"></diV>
+  <div class="h-[1px] bg-gray-500"></div>
 </template>
 
 <script>

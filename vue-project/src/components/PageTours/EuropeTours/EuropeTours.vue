@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-cyan-700 pb-14">
+  <section class="bg-cyan-900 pb-14">
     <!-- begin div -->
     <div class="max-w-[60rem] mx-auto pt-7">
       <p class="font-bold text-4xl mb-6 text-gray-100">Discovery Europe</p>
@@ -30,7 +30,7 @@
             </p>
 
             <router-link
-              class="h-10 w-28 flex justify-center items-center font-medium rounded-lg border-2 bg-cyan-700 border-cyan-700 text-cyan-50 hover:bg-cyan-100 hover:text-cyan-700 hover:border-2 hover:duration-100 absolute top-12 right-2"
+              class="h-10 w-28 flex justify-center items-center font-medium rounded-lg border-2 bg-cyan-900 border-cyan-900 text-cyan-50 hover:bg-cyan-100 hover:text-cyan-700 hover:border-2 hover:duration-100 absolute top-12 right-2"
               :to="'/europetours/' + eu.id"
             >
               View details
